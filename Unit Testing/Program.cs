@@ -1,6 +1,9 @@
-﻿int Add(int num1, int num2)
+﻿using Unit_Testing;
+
+CalculateIdealWeight calculateIdealWeight = new CalculateIdealWeight
 {
-    return num1 + num2;
-}
-Console.WriteLine($"{Add(2, 5)}");
-    
+    Height = 180,
+    Gender = "Female",
+};
+
+Console.WriteLine(calculateIdealWeight.GetIdealWeight());
